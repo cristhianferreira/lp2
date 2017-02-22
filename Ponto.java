@@ -16,16 +16,18 @@ public class Ponto{
 		Ponto  p1 = new Ponto();
 		p1.setX(10);
 		p1.setY(20); 
-		Ponto  p2 = new Ponto();
-		p2.setX(15);
-		p2.setY(30); 
- 		System.out.println(p1.getX() + "  " +p1.getY());
-		System.out.println(p2.getX() + "  " +p2.getY());
-        Ponto  p3 = new Ponto();
-		p3.setX(50);
-		p3.setY(70);
-        p3=p1;
-        System.out.println(p3.getX() + "  "+ p3.getY());
-        Ponto p4 = p3;
+		Ponto  p2 = new Ponto();		
+        Ponto  p4 = new Ponto();
+		p4.setX(70);
+		p4.setY(80);
+        System.out.println("Altura p4= "+p4.getY() + "Largura p4= "+ p4.getX());
+		System.out.println("Altura p1= "+p1.getY() + "Largura p1= "+ p1.getX());
+        double al= p4.getY()- p1.getY();
+        double lar= p4.getX()- p1.getX();
+		System.out.println("Distancia entre as alturas= "+ al);
+        System.out.println("Distancia entre as larguras= "+ lar);
+        double dis1= al*al+ lar*lar;
+        double dis2 = Math.sqrt(dis1);
+        System.out.println("Distancia entre as p4 e p1= "+ dis2);
 	}
 }
