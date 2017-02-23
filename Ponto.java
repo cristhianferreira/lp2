@@ -40,13 +40,7 @@ public class Ponto{
         System.out.println("Distancia entre as p4 e p1= "+ dis2);
      	Reta r1 = new Reta();
 		r1.setP1(p1);
-		r1.setP2(p2);
- 		p1.setX(30);
-		r1.getP2().setY(40);
-		System.out.println("Pontos reta r1");
-		System.out.println("Pontos p1 x= "+r1.getP1().getX());
-     	System.out.println("Pontos p1 y= "+r1.getP1().getY());
-		System.out.println("Pontos p2 x= "+r1.getP2().getX());
-		System.out.println("Pontos p2 y= "+r1.getP2().getY());
+		r1.setP4(p4);
+ 		 System.out.println("Area do trapezio formado"+r1.Trapezio());	
 	}
 }
