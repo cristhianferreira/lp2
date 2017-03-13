@@ -1,4 +1,5 @@
-public class Aluno{
+import java.util.Arrays;
+public class Aluno implements Comparable<Aluno>{
 	private String nome;	
 	private int idade=0;			
 	
@@ -16,8 +17,14 @@ public class Aluno{
 	public String getNome(){	
 		return this.nome;
 	}	
+	public int compareTo(Aluno outro){
+		if(this.idade < outro.getIdade())
+			return 1;
+		else if(this.idade > outro.getIdade())
+			return -1;
+		else
+			return 0;
+	}	
 
-
-
-
+	
 }

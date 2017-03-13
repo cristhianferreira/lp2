@@ -1,4 +1,5 @@
 import java.util.ArrayList;	
+import java.util.Collections;
 import java.util.Arrays;
 public class Principal{
 	public static void main(){
@@ -15,21 +16,30 @@ public class Principal{
 	alunos.add (alunob);
 
 	Aluno alunoc = new Aluno();	
-	alunoc.setNome("Joaozinho");	
+	alunoc.setNome("cleuso");	
 	alunoc.setIdade(15);	
 	alunos.add (alunoc);
 
 	Aluno alunod = new Aluno();	
-	alunod.setNome("Joaozinho");	
+	alunod.setNome("margot");	
 	alunod.setIdade(15);	
 	alunos.add (alunod);
 
 	Aluno alunoe = new Aluno();	
-	alunoe.setNome("Joaozinho");	
+	alunoe.setNome("luene");	
 	alunoe.setIdade(15);	
 	alunos.add (alunoe);
 
+	
+
+	
+	Collections.sort(alunos);/*ordenando...*/	
+
+	
+	for(int i = 0; i < 5; i++){
+                        System.out.println(alunos.get(i).getIdade() +"--"+ alunos.get(i).getNome());
+       }
+	
+
 	}
-
-
 }
